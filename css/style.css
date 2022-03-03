@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  transition: all ease .2s;
+}
+
+body {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 115px;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .92);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 1;
+}
+
+.movies {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 9px;
+  overflow: hidden;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, .2);
+  width: 324px;
+  margin: 0 10px 30px;
+}
+
+.movie img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.movie .title {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.movie button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: white;
+  background-color: #28A745;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.movie:hover button {
+  background-color: #1c7a32;
+}
+
+.movie button ion-icon {
+  margin-left: 3px;
+}
+
+@media (max-width: 740px) {
+  .movie {
+    width: 100%;
+  }
+}
